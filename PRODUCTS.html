@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="PRODUCTS.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    @media screen and (max-width:1095px){
+    #NAVITEMS{
+    display: inline-block;
+    margin-left: 2.5vw;
+}
+  }
+  @media screen and (max-width:950px){
+    .navList{
+      font-size: 1rem;
+}
+#LOGO{
+  font-size: 1.8rem;
+}
+  }
+  @media screen and (max-width:730px){
+    #NAVITEMS{
+    display: inline-block;
+    margin-left: 0vw;
+}
+.navList{
+      font-size: 1rem;
+}
+#LOGO{
+  font-size: 1rem;
+}
+  }
+  @media screen and (max-width:595px){
+.navList{
+      font-size: 1rem;
+      padding-right: 1vw;
+}
+header{
+  padding-right: 1vw;
+  padding-top: 3vh;
+  padding-bottom: 3vh;
+}
+  }
+  @media screen and (max-width:495px){
+.navList{
+      font-size: 0.5rem;
+      padding-right: 1vw;
+}
+#LOGO{
+  font-size: 0.6rem;
+}
+header{
+  padding-right: 1vw;
+  padding-top: 3vh;
+  padding-bottom: 3vh;
+}
+  }
+  @media screen and (max-width:450px){
+    #COPYRIGHT{
+      font-size: 1.5rem;
+    }
+  #backToTop{
+      font-size: 1.5rem;
+    }
+  }
+    .navLink{
+    color: black;text-decoration: none;
+  }
+  .navLink:hover{
+    color: black;
+  }
+  .forSale{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 25vw;
+    height: 35vh;
+    border-radius: 12.5%;
+    border: 2px solid black;
+    padding: 10px;
+    display: inline-block;
+    margin-left: 10vw;
+    background-color: #ffffff;
+    cursor: pointer;
+  }
+  .forSale:hover{
+    box-shadow: 0px 10px 5px greenyellow;
+    color: black;
+  }
+  .forSaleRIGHT{
+    margin-left: 30vw;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 25vw;
+    height: 35vh;
+    margin-right: 10vw;
+    border-radius: 12.5%;
+    border: 2px solid black;
+    padding: 10px;
+    background-color: #ffffff;
+    cursor: pointer;
+  }
+  .forSaleRIGHT:hover{
+    box-shadow: 0px 10px 5px greenyellow;
+  }
+  .forSalePics{
+    width: 22.5vw;
+    height: 30vh;
+    border-radius: 12.5%;
+  }
+  .DESCRIPTION{
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+  #head1{
+    text-align: center;
+    font-size: 4rem;
+    height: 20vh;
+    color: #6295A2;
+    font-family: system-ui;
+    font-weight: 700;
+  }
+</style>
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+<body>
+    <header id="header">
+        <nav>
+          <a href="index.html" style="text-decoration: none;"><span id="LOGO"><span id="LOGO1">FASHION</span><span id="LOGO2">STORE</span></span></a>
+          <ul id="NAVITEMS">
+            <li class="navList" id="HOMEPAGE"><a href="http://127.0.0.1:5500/index.html" class="navLink">HOME</a></li>
+            <li class="navList"><a href="SALES.html" class="navLink">SALES</a></li>
+            <li class="navList" id="SU"><a href="ANOTHER_ACC.html" class="navLink">USE ANOTHER ACCOUNT</a></li>
+          </ul>
+        </nav>
+      </header><br><br><br>
+      <div id="head1">
+        PRODUCTS
+      </div>
+      <div style="padding-top: 7.5vh;padding-bottom: 7.5vh;background-color: rgba(36, 66, 53, 0.483);">
+      <DIV style="display: flex;margin-top: 20vh;margin-bottom: 20vh;">
+        <a href="SHIRTS.html" style="color: black;"><div class="forSale" data-aos="fade-right">
+        <img src="shirts.jpeg" class="forSalePics">
+        <hr>
+        <SPAN class="DESCRIPTION">SHIRTS</SPAN>
+      </div></a>
+      <a href="T-SHIRTS.html" style="color: black;"><div class="forSaleRIGHT" data-aos="fade-left">
+        <img src="tshirt.jpeg" class="forSalePics">
+        <hr>
+        <SPAN class="DESCRIPTION">T-SHIRTS</SPAN>
+      </div></a>
+      </DIV>
+      <DIV style="display: flex;margin-top: 20vh;margin-bottom: 20vh;">
+        <a href="SHOES.html" style="color: black;"><div class="forSale" data-aos="fade-right">
+          <img src="shoes.jpeg" class="forSalePics">
+          <hr>
+          <SPAN class="DESCRIPTION">SHOES</SPAN>
+        </div></a>
+        <a href="SUNGLASSES.html" style="color: black;"><div class="forSaleRIGHT" data-aos="fade-left">
+          <img src="sunglasses.jpeg" class="forSalePics">
+          <hr>
+          <SPAN class="DESCRIPTION">SUNGLASSES</SPAN>
+        </div></a>
+        </DIV>
+        <DIV style="display: flex;margin-top: 20vh;margin-bottom: 20vh;">
+          <a href="PANTS.html" style="color: black;"><div class="forSale" data-aos="fade-right">
+            <img src="pants.jpeg" class="forSalePics">
+            <hr>
+            <SPAN class="DESCRIPTION">PANTS</SPAN>
+          </div></a>
+          <a href="PERFUMES.html" style="color: black;"><div class="forSaleRIGHT" data-aos="fade-left">
+            <img src="perfume.jpeg" class="forSalePics">
+            <hr>
+            <SPAN class="DESCRIPTION">PERFUMES</SPAN>
+          </div></a>
+          </DIV>
+          </div>
+    <center><div id="footer">
+        <footer>
+          <div id="backToTop">
+            <a href="#header" style="color: #ffffff;text-decoration: none;">Back To Top</a>
+          </div>
+          <div id="connectWithUs" style="background-color: #DAD3BE;">
+          <div style="display: inline;font-size: 2rem;font-weight: 700;"> Contact Us </div><br><br><br>
+          <span style="margin-right: 10vh;font-size: 2rem;"><a href="https://www.instagram.com/ishan_tiwari123005/?igsh=OHA5bTlwbnZrcjhr"><i id="Connect" class="fa-brands fa-instagram"></i></a></span><span style="margin-left: 10vh;font-size: 2rem;"><a href="https://www.linkedin.com/in/ishan-tiwari-45393029a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i id="Connect" class="fa-brands fa-linkedin-in"></i></a></span><br><br>
+          <div style="display: inline;text-align: center;font-size: 1.5rem;;justify-content: center;align-items: center;">
+            <span style="font-weight: 700;">Phone</span> : +91 XXXXXXXXXX <br>
+            <span style="font-weight: 700;">E-Mail</span> : ishan11032005@gmail.com
+          </div>
+          </div>
+          <div id="COPYRIGHT">
+            &copy; 2023-24, <a href="index.html" id="footerLink">FashionStore.com</a>
+          </div>
+        </footer>
+        </div></center>
+</body>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init({
+      duration:2000,
+      once:false,
+  });
+</script>
+</html>

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #SIGNUP{
+        text-align: center;
+        margin-top: 15vh;
+        font-size: 2.5rem;
+        font-family: system-ui;
+        padding-top: 10vh;
+        padding-bottom: 10vh;
+        padding-left: 10vw;
+        padding-right: 10vw;
+        border: 2px solid black;
+        border-radius: 10px;
+        width: 35vw;
+    }
+    b{
+        font-size: 2.5rem;
+    }
+    #HOME{
+        font-size: 2.5rem;
+        display: inline-block;
+        border: 2px solid black;
+        border-radius: 10px;
+        margin-top: 10vh;
+        margin-left: 5vw;
+        padding: 2px;
+        color: black;
+    }
+    #HOME::after{
+        color: gray;
+    }
+    input{
+        /* border: none; */
+        border-color: transparent;
+        border-bottom: 2px solid gray;
+        outline: none;
+        width: 25vw;
+        height: 5vh;
+        padding-left: 1vw;
+        font-size: 2rem;
+        text-align: center;
+        background-color: transparent;
+        color: gray;
+    }
+    input::placeholder{
+        font-size: 1.5rem;
+        color: gray;
+    }
+    #btn{
+        display: inline-block;
+        font-size: 2.5rem;
+        margin-top: 10vh;
+        padding: 5px;
+        border: 5px solid black;
+        border-radius: 10px;
+    }
+    #toggle{
+        display: block;
+        background-color: black;
+        color: white;
+        float: right;
+        padding-top: 1vh;
+        padding-bottom: 1vh;
+        padding-right: 1vw;
+        padding-left: 1vw;
+        margin-right: 10vh;
+        width: 50px;
+        height: 50px;
+        border: 2px solid gray;
+        border-radius: 50%;
+        margin-bottom: 15vh;
+        margin-top: 10vh;
+    }
+    #returnToHomeAndSignIn{
+        color: black;
+        display: none;
+        padding: 2.5px;
+        font-size: 2rem;
+        margin-top: 7.5vh;
+        display: none;
+        border: 2px solid black;
+        border-radius: 10px;
+        cursor: pointer;
+        transition-duration: 2s;
+    }
+    #returnToHomeAndSignIn:hover{
+        color: aliceblue;
+        background-color: grey;
+    }
+    @media screen and (max-width:870px){
+        input::placeholder{
+            font-size: 1rem;
+        } 
+    }
+    @media screen and (max-width:586px){
+        input::placeholder{
+            font-size: 0.75rem;
+        } 
+    }
+    @media screen and (max-width:490px){
+        #btn{
+            font-size: 1.5rem;
+        } 
+    }
+    @media screen and (max-width:600px){
+        #SIGNUP{
+        font-size: 2rem;
+        width: 40vw;
+    }
+    #toggle{
+        margin-right: 5vh;
+    }
+    }
+    @media screen and (max-width:410px){
+        #SIGNUP{
+        font-size: 1.5rem;
+    }
+    }
+    @media screen and (max-width:410px){
+        b{
+            font-size: 2rem;
+    }
+    }
+</style>
+<body>
+    <a href="index.html"><div id="HOME" style="cursor: pointer;">&#8592;</div></a><div id="toggle" onclick="toggle()" style="cursor: pointer;">DARK MODE</div>
+    <center><div id="SIGNUP">
+        <b>SIGN-UP</b><br><br><br>
+        EMAIL <br>
+        <input type="email" placeholder="E-Mail Id" id="EMAIL" class="BOX"><br><br>
+        NAME <br>
+        <input type="text" placeholder="Enter Your Name" id="NAME" class="BOX"><br><br>
+        USERNAME <br>
+        <input type="text" placeholder="Set Your Username" id="USERNAME" class="BOX"><br><br>
+        SET PASSWORD <br>
+        <input type="password" placeholder="Set Password" id="SETP" class="BOX"><br><br>
+        CONFIRM PASSWORD <br>
+        <input type="password" placeholder="Confirm Password" id="CONFIRMP" class="BOX"><br><br>
+        <div id="btn" style="cursor: pointer;" onclick="signUp()">SIGN UP</div>
+    </div></center>
+    <center><a href="index.html"><div id="returnToHomeAndSignIn">Return to Home and Sign In</div></a></center>
+</body>
+<script>
+    function toggle(){
+        if(document.body.style.backgroundColor=="white"){
+            document.body.style.backgroundColor="black";
+            document.body.style.color="white";
+            document.getElementById("toggle").style.backgroundColor="white";
+            document.getElementById("SIGNUP").style.borderBlockColor="white";
+            document.getElementById("SIGNUP").style.borderLeftColor="white";
+            document.getElementById("SIGNUP").style.borderRightColor="white";
+            document.getElementById("btn").style.borderBlockColor="white";
+            document.getElementById("btn").style.borderRightColor="white";
+            document.getElementById("btn").style.borderLeftColor="white";
+            document.getElementById("toggle").innerHTML="LIGHT MODE";
+            document.getElementById("toggle").style.color="black";
+            document.getElementById("HOME").style.color="white";
+            document.getElementById("HOME").style.borderColor="white";
+            document.getElementById("returnToHomeAndSignIn").style.color="white";
+            document.getElementById("returnToHomeAndSignIn").style.borderColor="white";
+        }
+        else{
+            document.body.style.backgroundColor="white";
+            document.body.style.color="black";
+            document.getElementById("toggle").style.backgroundColor="black";
+            document.getElementById("SIGNUP").style.borderBlockColor="black";
+            document.getElementById("SIGNUP").style.borderLeftColor="black";
+            document.getElementById("SIGNUP").style.borderRightColor="black";
+            document.getElementById("btn").style.borderBlockColor="black";
+            document.getElementById("btn").style.borderRightColor="black";
+            document.getElementById("btn").style.borderLeftColor="black";
+            document.getElementById("toggle").innerHTML="DARK MODE";
+            document.getElementById("toggle").style.color="white";
+            document.getElementById("HOME").style.color="black";
+            document.getElementById("HOME").style.borderColor="black";
+        }
+    }
+    let a=document.getElementById("EMAIL");
+    let b=document.getElementById("NAME");
+    let c=document.getElementById("USERNAME");
+    let d=document.getElementById("SETP");
+    let e=document.getElementById("CONFIRMP");
+    function signUp(){
+        if(!(a.value) || !(b.value) || !(c.value) || !(d.value) || !(e.value)){
+            alert("Please enter all your details!");
+        }
+        else if(d.value!=e.value){
+            alert("Wrong Password!");
+        }
+        else if(d.value==c.value){
+            alert("Password cannot be same as the username!");
+        }
+        else{
+        document.getElementById("SIGNUP").innerHTML="<p>Your Account has been created</p>";
+        document.getElementById("returnToHomeAndSignIn").style.display="inline-block";
+        document.getElementById("toggle").style.display="none";
+        }
+    }
+</script>
+</html>

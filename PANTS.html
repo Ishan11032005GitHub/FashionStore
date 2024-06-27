@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="PANTS.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+  .Brandit{
+    font-size: 2rem;
+    font-weight: 700;
+  }
+    @media screen and (max-width:1095px){
+    #NAVITEMS{
+    display: inline-block;
+    margin-left: 2.5vw;
+}
+  }
+  @media screen and (max-width:950px){
+    .navList{
+      font-size: 1rem;
+}
+#LOGO{
+  font-size: 1.8rem;
+}
+  }
+  @media screen and (max-width:730px){
+    #NAVITEMS{
+    display: inline-block;
+    margin-left: 0vw;
+}
+.navList{
+      font-size: 1rem;
+}
+#LOGO{
+  font-size: 1rem;
+}
+  }
+  @media screen and (max-width:595px){
+.navList{
+      font-size: 1rem;
+      padding-right: 1vw;
+}
+header{
+  padding-right: 1vw;
+  padding-top: 3vh;
+  padding-bottom: 3vh;
+}
+  }
+  @media screen and (max-width:495px){
+.navList{
+      font-size: 0.5rem;
+      padding-right: 1vw;
+}
+#LOGO{
+  font-size: 0.6rem;
+}
+header{
+  padding-right: 1vw;
+  padding-top: 3vh;
+  padding-bottom: 3vh;
+}
+  }
+  @media screen and (max-width:450px){
+    #COPYRIGHT{
+      font-size: 1.5rem;
+    }
+  #backToTop{
+      font-size: 1.5rem;
+    }
+  }
+  .FlyingMachine{
+    font-size: 2rem;
+    font-weight: 700;
+  }
+    .navLink{
+    color: black;text-decoration: none;
+  }
+  .navLink:hover{
+    color: black;
+  }
+  .AllenSolly
+  {font-size: 2rem;font-weight: 700;}
+  .BLACKSHIRT{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 25vw;
+    height: 45vh;
+    border-radius: 12.5%;
+    border: 2px solid black;
+    padding: 10px;
+    display: inline-block;
+    margin-left: 5vw;
+    background-color: #ffffff;
+    padding-bottom: 10vh;
+  }
+  .WHITESHIRT{
+    margin-top: 20vh;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 25vw;
+    height: 45vh;
+    border-radius: 12.5%;
+    border: 2px solid black;
+    padding: 10px;
+    display: inline-block;
+    margin-left: 5vw;
+    background-color: #ffffff;
+    padding-bottom: 10vh;
+  }
+  .BLUESHIRT{
+    margin-top: 20vh;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 25vw;
+    height: 45vh;
+    border-radius: 12.5%;
+    border: 2px solid black;
+    padding: 10px;
+    display: inline-block;
+    margin-left: 5vw;
+    background-color: #ffffff;
+    padding-bottom: 10vh;
+  }
+  .GREENSHIRT{
+    margin-top: 20vh;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 25vw;
+    height: 45vh;
+    border-radius: 12.5%;
+    border: 2px solid black;
+    padding: 10px;
+    display: inline-block;
+    margin-left: 5vw;
+    background-color: #ffffff;
+    padding-bottom: 10vh;
+  }
+  .REDSHIRT{
+    margin-top: 20vh;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 25vw;
+    height: 45vh;
+    border-radius: 12.5%;
+    border: 2px solid black;
+    padding: 10px;
+    display: inline-block;
+    margin-left: 5vw;
+    background-color: #ffffff;
+    padding-bottom: 10vh;
+  }
+  #black{
+    width: 22.5vw;
+    height: 30vh;
+    border-radius: 12.5%;
+  }
+  .ADDTOCART{
+    margin-left: 10vw;
+  }
+  #FORMEN{
+    margin-left: 10vw;
+    font-size: 2.5rem;
+  }
+  #FORWOMEN{
+    margin-left: 10vw;
+    font-size: 2.5rem;
+  }
+  #FORWOMEN{
+    margin-left: 10vw;
+    font-size: 2.5rem;
+    margin-top: 30vh;
+  }
+  #blackshirts{
+    display: block;
+  }
+  #blackshirtsforwomen{
+    display: block;
+  }
+  #whiteshirts{
+    display: block;
+  }
+  #whiteshirtsforwomen{
+    display: block;
+  }
+  #blueshirts{
+    display: block;
+  }
+  #blueshirtsforwomen{
+    display: block;
+  }
+  #greenshirts{
+    display: block;
+  }
+  #greenshirtsforwomen{
+    display: block;
+  }
+  #redshirts{
+    display: block;
+  }
+  #redshirtsforwomen{
+    display: block;
+  }
+  #addedToFavourites{
+    position: fixed;
+    width: 100vw;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    padding-left: 2.5vh;
+    padding-right: 2.5vh;
+    font-size: 1.5rem;
+    bottom: 0;
+    color: #ffffff;
+    background-color: black;
+    border-radius: 10px;
+    height: 4vh;
+    bottom: -8vh;
+  }
+  #disapear{
+    margin-left: 50vw;
+    cursor: pointer;
+  }
+  @media screen and (max-width:700px){
+    #disapear{
+      margin-left: 5vw;
+  }
+  }
+  @media screen and (max-width:400px){
+    #disapear{
+      margin-left: 5vw;
+  }
+  }
+  #toFooter{
+    display: none;
+    border: 2px SOLID violet;
+    border-radius: 5px;
+    padding: 3px;
+    float: right;
+    margin-right: 10vw;
+    font-size: 2.5rem;
+  }
+  #toFooter::after,#toFooter:hover{
+    color: black;
+  }
+  @media screen and (max-width:1684px) {
+    .ADDTOCART{
+    margin-left: 2.5vw;
+  }
+  }
+  @media screen and (max-width:954px) {
+    .ADDTOCART{
+    font-size: 0.5em;
+  }
+  }
+  @media screen and (max-width:1197px) {
+    .optionsOfColors{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 15vw;
+    height: 5vh;
+    border: 2px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+}
+  }
+  @media screen and (max-width:1017px) {
+    .ADDTOCART{
+    margin-left: 2.5vw;
+    font-size: 1rem;
+  }
+  .likeButton{
+    font-size: 1.5rem;
+  }
+  }
+  @media screen and (max-width:866px){
+    .BLACKSHIRT{
+    display: inline-block;
+    margin-left: 4vw;
+  }
+  .WHITESHIRT{
+    display: inline-block;
+    margin-left: 4vw;
+  }
+  .BLUESHIRT{
+    display: inline-block;
+    margin-left: 4vw;
+  }
+  .GREENSHIRT{
+    display: inline-block;
+    margin-left: 4vw;
+  }
+  .REDSHIRT{
+    display: inline-block;
+    margin-left: 4vw;
+  }
+  .FlyingMachine{
+      font-size: 1.5rem;
+    }
+  }
+  @media screen and (max-width:662px){
+    .ADDTOCART{
+    margin-left: 2.5vw;
+    font-size: 0.75rem;
+  }
+  }
+  @media screen and (max-width:595px){
+    .AllenSolly{
+    font-size: 1.75rem;
+  }
+  }
+  @media screen and (max-width:525px){
+    .AllenSolly{
+    font-size: 1rem;
+  }
+  .FlyingMachine{
+    font-size: 1.25rem;
+  }
+  .ADDTOCART{
+    margin-left: 1vw;
+    font-size: 0.5rem;
+  }
+  .likeButton{
+    font-size: 1rem;
+  }
+  }
+  @media screen and (max-width:597px){
+    .BLACKSHIRT{
+      margin-left: 0vw;
+      margin-right: 0vw;
+  }
+  .WHITESHIRT{
+    margin-left: 0vw;
+      margin-right: 0vw;
+  }
+  .BLUESHIRT{
+    margin-left: 0vw;
+      margin-right: 0vw;
+  }
+  .GREENSHIRT{
+    margin-left: 0vw;
+      margin-right: 0vw;
+  }
+  .REDSHIRT{
+    margin-left: 0vw;
+      margin-right: 0vw;
+  }
+  }
+  @media screen and (max-width:410px){
+    .Brandit{
+      font-size: 1rem;
+    }
+  }
+  @media screen and (max-width:410px){
+    /* .BLACKSHIRT{
+      margin-left: 10vw;
+      margin-right: 5vw;
+  }
+  .WHITESHIRT{
+    margin-left: 10vw;
+      margin-right: 5vw;
+  }
+  .BLUESHIRT{
+    margin-left: 10vw;
+      margin-right: 5vw;
+  }
+  .GREENSHIRT{
+    margin-left: 10vw;
+      margin-right: 5vw;
+  }
+  .REDSHIRT{
+    margin-left: 10vw;
+      margin-right: 5vw;
+  } */
+  #FORMEN{
+    font-size: 25px;
+  }
+  #FORWOMEN{
+  margin-left: 10vw;
+    font-size: 2.5rem;
+  }
+  }
+  #PRODUCTS{
+    display: inline-block;
+    margin-left: 20vw;
+    font-size: 2rem;
+    text-decoration: none;
+    border: 2px solid black;
+    padding: 5px;
+    border-radius: 10px;
+    color: black;
+    font-family: system-ui;
+    cursor: pointer;
+  }
+  @media screen and (max-width:825px) {
+    .optionsOfColors{
+      font-size: 1.5rem;
+      font-weight: 600;
+    }
+  }
+  @media screen and (max-width:580px) {
+    .optionsOfColors{
+      font-size: 1rem;
+      font-weight: 600;
+    }
+  }
+  @media screen and (max-width:395px) {
+    .optionsOfColors{
+      font-size: 0.75rem;
+      font-weight: 550;
+    }
+  }
+  @media screen and (max-width:825px) {
+    #toFooter{
+      font-size: 2rem;
+    }
+  }
+  @media screen and (max-width:580px) {
+    #toFooter{
+      font-size: 1.5rem;
+    }
+  }
+  @media screen and (max-width:395px) {
+    #toFooter{
+      font-size: 1.25rem;
+    }
+  }
+  @media screen and (max-width:825px) {
+    #PRODUCTS{
+      font-size: 1.5rem;
+    }
+  }
+  @media screen and (max-width:580px) {
+    #PRODUCTS{
+      font-size: 1rem;
+    }
+  }
+  @media screen and (max-width:395px) {
+    #PRODUCTS{
+      font-size: 0.5rem;
+    }
+  }
+  #ACCESSORIES{
+            z-index: +10;
+            visibility: hidden;
+            background-color: rgba(84, 170, 205,0.5);
+            height: 0vh;
+            padding-left: 3vw;
+            padding-right: 3vw;
+        }
+        .THINGS{
+          color: transparent;
+            padding-top: 5vh;
+            padding-bottom: 5vh;
+            font-size: 3rem;
+            font-family: system-ui;
+            font-weight: 900;
+            text-align: center;
+        }
+        .ACCESSORY{
+          color: transparent;
+            padding-top: 3vh;
+            padding-bottom: 3vh;
+            font-size: 2rem;
+            font-family: system-ui;
+            font-weight: 500;
+            text-align: center;
+        }
+</style>
+<body>
+    <header id="header">
+        <nav>
+          <a href="index.html" style="text-decoration: none;"><span id="LOGO"><span id="LOGO1">FASHION</span><span id="LOGO2">STORE</span></span></a>
+          <ul id="NAVITEMS">
+            <li class="navList" id="HOMEPAGE"><a href="index.html" class="navLink">HOME</a></li>
+          </ul>
+          <div id="PRODUCTS" onclick="displayAccessories()">&#8595; PRODUCTS</div>
+        </nav>
+      </header>
+      <div id="ACCESSORIES">
+        <span id="EXITACC" style="float: right;font-size: 2rem;color: transparent;cursor: pointer;" onclick="donotDisplayAccessories()">&#10006;</span>
+          <div class="THINGS" id="H">PRODUCTS</div>
+          <div class="ACCESSORY">
+            <a href="SHIRTS.html" id="R1" style="color: transparent;text-decoration: none;">SHIRTS</a>
+          </div>
+          <div class="ACCESSORY">
+            <a href="T-SHIRTS.html" id="R2" style="color: transparent;text-decoration: none;">T-SHIRTS</a>
+          </div>
+          <div class="ACCESSORY">
+            <a href="SHOES.html" id="R3" style="color: transparent;text-decoration: none;">SHOES</a>
+          </div>
+          <div class="ACCESSORY">
+            <a href="SUNGLASSES.html" id="R4" style="color: transparent;text-decoration: none;">SUNGLASSES</a>
+          </div>
+          <div class="ACCESSORY">
+            <a href="PANTS.html" id="R5" style="color: transparent;text-decoration: none;">PANTS</a>
+          </div>
+          <div class="ACCESSORY">
+            <a href="PERFUMES.html" id="R6" style="color: transparent;text-decoration: none;">PERFUMES</a>
+          </div>
+       </div><br><br><br>
+      <div id="filter">
+        FILTER
+      </div><br><br>
+      <div id="COLOROPTIONS">
+        <div class="optionsOfColors" id="BLACK" onclick="changeColorOfBlack()">
+            BLACK
+        </div>
+        <div class="optionsOfColors" id="WHITE" onclick="changeColorOfWhite()">
+            WHITE
+        </div>
+        <div class="optionsOfColors" id="BLUE" onclick="changeColorOfBlue()">
+            BLUE
+        </div>
+        <div class="optionsOfColors" id="GREEN" onclick="changeColorOfGreen()">
+            GREEN
+        </div>
+        <div class="optionsOfColors" id="RED" onclick="changeColorOfRed()">
+            RED
+        </div>
+      </div><br><br><br><br><br>
+      <SPAN id="FORMEN"><b>PANTS FOR MEN</b></SPAN>
+      <DIV id="mensShirts" style="display: inline-block;height: 250vh;padding-top: 10vh;padding-bottom: 10vh;">
+        <div id="blackshirts">
+        <div class="BLACKSHIRT">
+          <img src="https://sp.yimg.com/ib/th?id=OPAC.aq6vKvSYdCIozA474C474&o=5&pid=21.1&w=160&h=105" id="black">
+          <hr>
+          <span class="Brandit">Brandit</span>
+          <hr><br>
+          <div id="LIKE1" class="likeButton" style="display: inline;font-family: system-ui; padding: 1px;border: 2px solid black;border-radius: 10px;cursor: pointer;" onclick="like1()">&#9825;</div><div id="ADDTOCART1" class="ADDTOCART" style="display: inline;font-family: system-ui; padding: 1px;border: 2px solid black;border-radius: 10px;cursor: pointer;" onclick="addToCart1()">&#128722;ADD TO CART</div>
+        </div>
+        <div class="BLACKSHIRT">
+          <img src="https://sp.yimg.com/ib/th?id=OPAC.z6QxS9hC9DjeVg474C474&o=5&pid=21.1&w=160&h=105" id="black">
+          <hr>
+          <span class="AllenSolly">Allen Solly</span>
+          <hr><br>
+          <div id="LIKE2" class="likeButton" style="display: inline;font-family: system-ui; padding: 1px;border: 2px solid black;border-radius: 10px;cursor: pointer;" onclick="like2()">&#9825;</div><div id="ADDTOCART2" class="ADDTOCART" style="display: inline;font-family: system-ui; padding: 1px;border: 2px solid black;border-radius: 10px;cursor: pointer;" onclick="addToCart2()">&#128722;ADD TO CART</div>
+        </div>
+        <div class="BLACKSHIRT">
+          <img src="https://sp.yimg.com/ib/th?id=OPAC.OQycCB2o1oO3kw474C474&o=5&pid=21.1&w=160&h=105" id="black">
+          <hr>
+          <span class="FlyingMachine">Flying Machine</span>
+          <hr><br>
+          <div id="LIKE3" class="likeButton" style="display: inline;font-family: system-ui; padding: 1px;border: 2px solid black;border-radius: 10px;cursor: pointer;" onclick="like3()">&#9825;</div><div id="ADDTOCART3" class="ADDTOCART" style="display: inline;font-family: system-ui; padding: 1px;border: 2px solid black;border-radius: 10px;cursor: pointer;" onclick="addToCart3()">&#128722;ADD TO CART</div>
+        </div>
+        </div>
+        <div id="whiteshirts">
+        <div class="WHITESHIRT">
+          <img src="https://tse1.mm.bing.net/th?id=OIP.gt5mhRv4jJdjgy1aFb4bTgHaJE&pid=Api&P=0&h=180" id="black">
+          <hr>
+          <span class="Brandit">Brandit</span>
+          <hr><br>
+          <div id="LIKE4" class="likeButton" style="display: inline;font-family: system-ui; padding: 1px;border: 2px solid black;border-radius: 10px;cursor: pointer;" onclick="like4()">&#9825;</div><div id="ADDTOCART4" class="ADDTOCART" style="display: inline;font-family: system-ui; padding: 1px;border: 2px solid black;border-radius: 10px;cursor: pointer;" onclick="addToCart4()">&#128722;ADD TO CART</div>
+        </div>
+        <div class="WHITESHIRT">
+          <img src="https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1525364653-lululemon-abc-slim-white-pant-1525364630.jpg?crop=1xw:1xh;center,top&resize=480:*" id="black">
+          <hr>
+          <span class="AllenSolly">Allen Solly</span>
+          <hr><br>
+          <div id="LIKE5" class="likeButton" style="display: inline;font-family: system-ui; padding: 1px;border: 2px solid black;border-radius: 10px;cursor: pointer;" onclick="like5()">&#9825;</div><div id="ADDTOCART5" class="ADDTOCART" style="display: inline;font-family: system-ui; padding: 1px;border: 2px solid black;border-radius: 10px;cursor: pointer;" onclick="addToCart5()">&#128722;ADD TO CART</div>
+        </div>
+        <div class="WHITESHIRT">
+          <img src="https://images.bonanzastatic.com/afu/images/1489/5641/07/_T2eC16NHJGQFFhsjtzh_BR3nd8bgqQ__60_57.JPG" id="black">
+          <hr>
+          <span class="FlyingMachine">Flying Machine</span>
+          <hr><br>
+          <div id="LIKE6" class="likeButton" style="display: inline;font-family: system-ui; padding: 1px;border: 2px solid black;border-radius: 10px;cursor: pointer;" onclick="like6()">&#9825;</div><div id="ADDTOCART6" class="ADDTOCART" style="display: inline;font-family: system-ui; padding: 1px;border: 2px solid black;border-radius: 10px;cursor: pointer;" onclick="addToCart6()">&#128722;ADD TO CART</div>
+        </div>
+        </div>
+        <div id="blueshirts">
+        <div class="BLUESHIRT">
+          <img src="https://sp.yimg.com/ib/th?id=OPAC.gZabkcWLNq1miA474C474&o=5&pid=21.1&w=160&h=105" id="black">
+          <hr>
+          <span class="Brandit">Brandit</span>
+          <hr><br>
+          <div id="LIKE7" class="likeButton" style="display: inline;font-family: system-ui; padding: 1px;border: 2px solid black;border-radius: 10px;cursor: pointer;" onclick="like7()">&#9825;</div><div id="ADDTOCART7" class="ADDTOCART" style="display: inline;font-family: system-ui; padding: 1px;border: 2px solid black;border-radius: 10px;cursor: pointer;" onclick="addToCart7()">&#128722;ADD TO CART</div>
+        </div>
+        <div class="BLUESHIRT">
+          <img src="https://sp.yimg.com/ib/th?id=OPAC.pTJW%2fGW3VgSLHQ474C474&o=5&pid=21.1&w=160&h=105" id="black">
+          <hr>
+          <span class="AllenSolly">Allen Solly</span>
+          <hr><br>
+          <div id="LIKE8" class="likeButton" style="display: inline;font-family: system-ui; padding: 1px;border: 2px solid black;border-radius: 10px;cursor: pointer;" onclick="like8()">&#9825;</div><div id="ADDTOCART8" class="ADDTOCART" style="display: inline;font-family: system-ui; padding: 1px;border: 2px solid black;border-radius: 10px;cursor: pointer;" onclick="addToCart8()">&#128722;ADD TO CART</div>
+        </div>
+        <div class="BLUESHIRT">
+          <img src="https://sp.yimg.com/ib/th?id=OPAC.PNfOZoITOfGjZg474C474&o=5&pid=21.1&w=160&h=105" id="black">
+          <hr>
+          <span class="FlyingMachine">Flying Machine</span>
+          <hr><br>
+          <div id="LIKE9" class="likeButton" style="display: inline;font-family: system-ui; padding: 1px;border: 2px solid black;border-radius: 10px;cursor: pointer;" onclick="like9()">&#9825;</div><div id="ADDTOCART9" class="ADDTOCART" style="display: inline;font-family: system-ui; padding: 1px;border: 2px solid black;border-radius: 10px;cursor: pointer;" onclick="addToCart9()">&#128722;ADD TO CART</div>
+        </div>
+        </div>
+        <div id="greenshirts">
+        <div class="GREENSHIRT">
+          <img src="https://sp.yimg.com/ib/th?id=OPAC.L0JYiRXcZYoAiw474C474&o=5&pid=21.1&w=160&h=105" id="black">
+          <hr>
+          <span class="Brandit">Brandit</span>
+          <hr><br>
+          <div id="LIKE10" class="likeButton" style="display: inline;font-family: system-ui; padding: 1px;border: 2px solid black;border-radius: 10px;cursor: pointer;" onclick="like10()">&#9825;</div><div id="ADDTOCART10" class="ADDTOCART" style="display: inline;font-family: system-ui; padding: 1px;border: 2px solid black;border-radius: 10px;cursor: pointer;" onclick="addToCart10()">&#128722;ADD TO CART</div>
+        </div>
+        <div class="GREENSHIRT">
+          <img src="https://sp.yimg.com/ib/th?id=OPAC.xvIPY%2bDtHkDvaA474C474&o=5&pid=21.1&w=160&h=105" id="black">
+          <hr>
+          <span class="AllenSolly">Allen Solly</span>
+          <hr><br>
+          <div id="LIKE11" class="likeButton" style="display: inline;font-family: system-ui; padding: 1px;border: 2px solid black;border-radius: 10px;cursor: pointer;" onclick="like11()">&#9825;</div><div id="ADDTOCART11" class="ADDTOCART" style="display: inline;font-family: system-ui; padding: 1px;border: 2px solid black;border-radius: 10px;cursor: pointer;" onclick="addToCart11()">&#128722;ADD TO CART</div>
+        </div>
+        <div class="GREENSHIRT">
+          <img src="https://sp.yimg.com/ib/th?id=OPAC.Ps7TsoMEdGgy6A474C474&o=5&pid=21.1&w=160&h=105" id="black">
+          <hr>
+          <span class="FlyingMachine">Flying Machine</span>
+          <hr><br>
+          <div id="LIKE12" class="likeButton" style="display: inline;font-family: system-ui; padding: 1px;border: 2px solid black;border-radius: 10px;cursor: pointer;" onclick="like12()">&#9825;</div><div id="ADDTOCART12" class="ADDTOCART" style="display: inline;font-family: system-ui; padding: 1px;border: 2px solid black;border-radius: 10px;cursor: pointer;" onclick="addToCart12()">&#128722;ADD TO CART</div>
+        </div>
+        </div>
+        <div id="redshirts">
+        <div class="REDSHIRT">
+          <img src="https://tse1.mm.bing.net/th?id=OIP.UIBCSwUSDi10OvoeK316ZAHaLQ&pid=Api&P=0&h=180" id="black">
+          <hr>
+          <span class="Brandit">Brandit</span>
+          <hr><br>
+          <div id="LIKE13" class="likeButton" style="display: inline;font-family: system-ui; padding: 1px;border: 2px solid black;border-radius: 10px;cursor: pointer;" onclick="like13()">&#9825;</div><div id="ADDTOCART13" class="ADDTOCART" style="display: inline;font-family: system-ui; padding: 1px;border: 2px solid black;border-radius: 10px;cursor: pointer;" onclick="addToCart13()">&#128722;ADD TO CART</div>
+        </div>
+        <div class="REDSHIRT">
+          <img src="https://tse3.mm.bing.net/th?id=OIP.3-u8CkQSa_yYrfCLvhrftgHaKi&pid=Api&P=0&h=180" id="black">
+          <hr>
+          <span class="AllenSolly">Allen Solly</span>
+          <hr><br>
+          <div id="LIKE14" class="likeButton" style="display: inline;font-family: system-ui; padding: 1px;border: 2px solid black;border-radius: 10px;cursor: pointer;" onclick="like14()">&#9825;</div><div id="ADDTOCART14" class="ADDTOCART" style="display: inline;font-family: system-ui; padding: 1px;border: 2px solid black;border-radius: 10px;cursor: pointer;" onclick="addToCart14()">&#128722;ADD TO CART</div>
+        </div>
+        <div class="REDSHIRT">
+          <img src="https://tse1.mm.bing.net/th?id=OIP.k9gbh6eBQweZ9Y9ngoZ2FwHaLH&pid=Api&P=0&h=180" id="black">
+          <hr>
+          <span class="FlyingMachine">Flying Machine</span>
+          <hr><br>
+          <div id="LIKE15" class="likeButton" style="display: inline;font-family: system-ui; padding: 1px;border: 2px solid black;border-radius: 10px;cursor: pointer;" onclick="like15()">&#9825;</div><div id="ADDTOCART15" class="ADDTOCART" style="display: inline;font-family: system-ui; padding: 1px;border: 2px solid black;border-radius: 10px;cursor: pointer;" onclick="addToCart15()">&#128722;ADD TO CART</div>
+        </div>
+      </div>
+      </DIV><br><br><br><br><br><br><br><br><br><br>
+      <div id="SHIRTSFORWOMEN"><div id="FORWOMEN" style="display: inline;"><b>PANTS FOR WOMEN</b></div>
+      <DIV id="womensShirts" style="display: inline-block;height: 250vh;padding-top: 10vh;padding-bottom: 10vh;">
+        <div id="blackshirtsforwomen">
+        <div class="BLACKSHIRT">
+          <img src="https://m.media-amazon.com/images/I/71qQHk-z-bL._AC_UL480_FMwebp_QL65_.jpg" id="black">
+          <hr>
+          <span class="Brandit">Brandit</span>
+          <hr><br>
+          <div id="LIKE16" class="likeButton" style="display: inline;font-family: system-ui; padding: 1px;border: 2px solid black;border-radius: 10px;cursor: pointer;" onclick="like16()">&#9825;</div><div id="ADDTOCART16" class="ADDTOCART" style="display: inline;font-family: system-ui; padding: 1px;border: 2px solid black;border-radius: 10px;cursor: pointer;" onclick="addToCart16()">&#128722;ADD TO CART</div>
+        </div>
+        <div class="BLACKSHIRT">
+          <img src="https://sp.yimg.com/ib/th?id=OPAC.XON%2b4soquniPkw474C474&o=5&pid=21.1&w=160&h=105" id="black">
+          <hr>
+          <span class="AllenSolly">Allen Solly</span>
+          <hr><br>
+          <div id="LIKE17" class="likeButton" style="display: inline;font-family: system-ui; padding: 1px;border: 2px solid black;border-radius: 10px;cursor: pointer;" onclick="like17()">&#9825;</div><div id="ADDTOCART17" class="ADDTOCART" style="display: inline;font-family: system-ui; padding: 1px;border: 2px solid black;border-radius: 10px;cursor: pointer;" onclick="addToCart17()">&#128722;ADD TO CART</div>
+        </div>
+        <div class="BLACKSHIRT">
+          <img src="https://tse3.mm.bing.net/th?id=OIP.-fjuI7YrDzk8_SE-EnBRxgAAAA&pid=Api&P=0&h=180" id="black">
+          <hr>
+          <span class="FlyingMachine">Flying Machine</span>
+          <hr><br>
+          <div id="LIKE18" class="likeButton" style="display: inline;font-family: system-ui; padding: 1px;border: 2px solid black;border-radius: 10px;cursor: pointer;" onclick="like18()">&#9825;</div><div id="ADDTOCART18" class="ADDTOCART" style="display: inline;font-family: system-ui; padding: 1px;border: 2px solid black;border-radius: 10px;cursor: pointer;" onclick="addToCart18()">&#128722;ADD TO CART</div>
+        </div>
+        </div>
+        <div id="whiteshirtsforwomen">
+        <div class="WHITESHIRT">
+          <img src="https://i5.walmartimages.com/asr/76285acc-eddf-4c46-a17a-7b0cbb9e45bd_1.b82d6175fa0881e2356b85e5f2735292.jpeg" id="black">
+          <hr>
+          <span class="Brandit">Brandit</span>
+          <hr><br>
+          <div id="LIKE19" class="likeButton" style="display: inline;font-family: system-ui; padding: 1px;border: 2px solid black;border-radius: 10px;cursor: pointer;" onclick="like19()">&#9825;</div><div id="ADDTOCART19" class="ADDTOCART" style="display: inline;font-family: system-ui; padding: 1px;border: 2px solid black;border-radius: 10px;cursor: pointer;" onclick="addToCart19()">&#128722;ADD TO CART</div>
+        </div>
+        <div class="WHITESHIRT">
+          <img src="https://m.media-amazon.com/images/I/517-WAV7lFL._AC_UL480_FMwebp_QL65_.jpg" id="black">
+          <hr>
+          <span class="AllenSolly">Allen Solly</span>
+          <hr><br>
+          <div id="LIKE20" class="likeButton" style="display: inline;font-family: system-ui; padding: 1px;border: 2px solid black;border-radius: 10px;cursor: pointer;" onclick="like20()">&#9825;</div><div id="ADDTOCART20" class="ADDTOCART" style="display: inline;font-family: system-ui; padding: 1px;border: 2px solid black;border-radius: 10px;cursor: pointer;" onclick="addToCart20()">&#128722;ADD TO CART</div>
+        </div>
+        <div class="WHITESHIRT">
+          <img src="https://i5.walmartimages.com/asr/0e00e8f2-3fb4-4f6c-945f-22ea5b1832f8_1.1623ae5480d6ab080c6b69132ff42fe5.jpeg" id="black">
+          <hr>
+          <span class="FlyingMachine">Flying Machine</span>
+          <hr><br>
+          <div id="LIKE21" class="likeButton" style="display: inline;font-family: system-ui; padding: 1px;border: 2px solid black;border-radius: 10px;cursor: pointer;" onclick="like21()">&#9825;</div><div id="ADDTOCART21" class="ADDTOCART" style="display: inline;font-family: system-ui; padding: 1px;border: 2px solid black;border-radius: 10px;cursor: pointer;" onclick="addToCart21()">&#128722;ADD TO CART</div>
+        </div>
+        </div>
+        <div id="blueshirtsforwomen">
+        <div class="BLUESHIRT">
+          <img src="https://tse1.mm.bing.net/th?id=OIP.pfEWtmSiBmpp82ySxYFQVAHaHa&pid=Api&rs=1&c=1&qlt=95&w=110&h=110" id="black">
+          <hr>
+          <span class="Brandit">Brandit</span>
+          <hr><br>
+          <div id="LIKE22" class="likeButton" style="display: inline;font-family: system-ui; padding: 1px;border: 2px solid black;border-radius: 10px;cursor: pointer;" onclick="like22()">&#9825;</div><div id="ADDTOCART22" class="ADDTOCART" style="display: inline;font-family: system-ui; padding: 1px;border: 2px solid black;border-radius: 10px;cursor: pointer;" onclick="addToCart22()">&#128722;ADD TO CART</div>
+        </div>
+        <div class="BLUESHIRT">
+          <img src="https://n4.sdlcdn.com/imgs/c/o/y/Allen-Solly-Blue-Cotton-Casual-SDL746324102-2-eda2a.jpg" id="black">
+          <hr>
+          <span class="AllenSolly">Allen Solly</span>
+          <hr><br>
+          <div id="LIKE23" class="likeButton" style="display: inline;font-family: system-ui; padding: 1px;border: 2px solid black;border-radius: 10px;cursor: pointer;" onclick="like23()">&#9825;</div><div id="ADDTOCART23" class="ADDTOCART" style="display: inline;font-family: system-ui; padding: 1px;border: 2px solid black;border-radius: 10px;cursor: pointer;" onclick="addToCart23()">&#128722;ADD TO CART</div>
+        </div>
+        <div class="BLUESHIRT">
+          <img src="https://m.media-amazon.com/images/I/81UIotxdLPL._SX569_.jpg" id="black">
+          <hr>
+          <span class="FlyingMachine">Flying Machine</span>
+          <hr><br>
+          <div id="LIKE24" class="likeButton" style="display: inline;font-family: system-ui; padding: 1px;border: 2px solid black;border-radius: 10px;cursor: pointer;" onclick="like24()">&#9825;</div><div id="ADDTOCART24" class="ADDTOCART" style="display: inline;font-family: system-ui; padding: 1px;border: 2px solid black;border-radius: 10px;cursor: pointer;" onclick="addToCart24()">&#128722;ADD TO CART</div>
+        </div>
+        </div>
+        <div id="greenshirtsforwomen">
+        <div class="GREENSHIRT">
+          <img src="https://i5.walmartimages.com/asr/cdeb4411-bceb-42c1-b4b6-dbc2e9c593ba_1.5348461d828f55c07f3278ba6f32a68c.jpeg" id="black">
+          <hr>
+          <span class="Brandit">Brandit</span>
+          <hr><br>
+          <div id="LIKE25" class="likeButton" style="display: inline;font-family: system-ui; padding: 1px;border: 2px solid black;border-radius: 10px;cursor: pointer;" onclick="like25()">&#9825;</div><div id="ADDTOCART25" class="ADDTOCART" style="display: inline;font-family: system-ui; padding: 1px;border: 2px solid black;border-radius: 10px;cursor: pointer;" onclick="addToCart25()">&#128722;ADD TO CART</div>
+        </div>
+        <div class="GREENSHIRT">
+          <img src="https://m.media-amazon.com/images/I/51dTscyCRLL._SY879_.jpg" id="black">
+          <hr>
+          <span class="AllenSolly">Allen Solly</span>
+          <hr><br>
+          <div id="LIKE26" class="likeButton" style="display: inline;font-family: system-ui; padding: 1px;border: 2px solid black;border-radius: 10px;cursor: pointer;" onclick="like26()">&#9825;</div><div id="ADDTOCART26" class="ADDTOCART" style="display: inline;font-family: system-ui; padding: 1px;border: 2px solid black;border-radius: 10px;cursor: pointer;" onclick="addToCart26()">&#128722;ADD TO CART</div>
+        </div>
+        <div class="GREENSHIRT">
+          <img src="https://tse3.mm.bing.net/th?id=OIP.5BEzON4mRKtoZoDrdLlkZgHaJ4&pid=Api&P=0&h=180" id="black">
+          <hr>
+          <span class="FlyingMachine">Flying Machine</span>
+          <hr><br>
+          <div id="LIKE27" class="likeButton" style="display: inline;font-family: system-ui; padding: 1px;border: 2px solid black;border-radius: 10px;cursor: pointer;" onclick="like27()">&#9825;</div><div id="ADDTOCART27" class="ADDTOCART" style="display: inline;font-family: system-ui; padding: 1px;border: 2px solid black;border-radius: 10px;cursor: pointer;" onclick="addToCart27()">&#128722;ADD TO CART</div>
+        </div>
+        </div>
+        <div id="redshirtsforwomen">
+        <div class="REDSHIRT">
+          <img src="https://m.media-amazon.com/images/I/61K498XRyYL._AC_SX466_.jpg" id="black">
+          <hr>
+          <span class="Brandit">Brandit</span>
+          <hr><br>
+          <div id="LIK28" class="likeButton" style="display: inline;font-family: system-ui; padding: 1px;border: 2px solid black;border-radius: 10px;cursor: pointer;" onclick="like28()">&#9825;</div><div id="ADDTOCART28" class="ADDTOCART" style="display: inline;font-family: system-ui; padding: 1px;border: 2px solid black;border-radius: 10px;cursor: pointer;" onclick="addToCart28()">&#128722;ADD TO CART</div>
+        </div>
+        <div class="REDSHIRT">
+          <img src="https://m.media-amazon.com/images/I/51ZLTC1uE7L._AC_UL480_FMwebp_QL65_.jpg" id="black">
+          <hr>
+          <span class="AllenSolly">Allen Solly</span>
+          <hr><br>
+          <div id="LIKE29" class="likeButton" style="display: inline;font-family: system-ui; padding: 1px;border: 2px solid black;border-radius: 10px;cursor: pointer;" onclick="like29()">&#9825;</div><div id="ADDTOCART29" class="ADDTOCART" style="display: inline;font-family: system-ui; padding: 1px;border: 2px solid black;border-radius: 10px;cursor: pointer;" onclick="addToCart29()">&#128722;ADD TO CART</div>
+        </div>
+        <div class="REDSHIRT">
+          <img src="https://tse3.mm.bing.net/th?id=OIP.q09HUBI4kt-nc-NP7ZEW3gHaJ4&pid=Api&P=0&h=180" id="black">
+          <hr>
+          <span class="FlyingMachine">Flying Machine</span>
+          <hr><br>
+          <div id="LIKE30" class="likeButton" style="display: inline;font-family: system-ui; padding: 1px;border: 2px solid black;border-radius: 10px;cursor: pointer;" onclick="like30()">&#9825;</div><div id="ADDTOCART30" class="ADDTOCART" style="display: inline;font-family: system-ui; padding: 1px;border: 2px solid black;border-radius: 10px;cursor: pointer;" onclick="addToCart30()">&#128722;ADD TO CART</div>
+        </div>
+      </div>
+      </DIV></div><br><br><br><br><br><br><br><br><br><br>
+      <a href="#footer"><div id="toFooter">SCROLL DOWN</div></a>
+      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+      <center><div id="addedToFavourites">
+        ADDED TO FAVOURITES  <span id="disapear" onclick="disapear()"><i class="fa-solid fa-xmark"></i></span>
+      </div></center>
+    <center><div id="footer">
+        <footer>
+          <div id="backToTop">
+            <a href="#header" style="color: #ffffff;text-decoration: none;">Back To Top</a>
+          </div>
+          <div id="connectWithUs" style="background-color: #DAD3BE;">
+          <div style="display: inline;font-size: 2rem;font-weight: 700;"> Contact Us </div><br><br><br>
+          <span style="margin-right: 10vh;font-size: 2rem;"><a href="https://www.instagram.com/ishan_tiwari123005/?igsh=OHA5bTlwbnZrcjhr"><i id="Connect" class="fa-brands fa-instagram"></i></a></span><span style="margin-left: 10vh;font-size: 2rem;"><a href="https://www.linkedin.com/in/ishan-tiwari-45393029a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i id="Connect" class="fa-brands fa-linkedin-in"></i></a></span><br><br>
+          <div style="display: inline;text-align: center;font-size: 1.5rem;;justify-content: center;align-items: center;">
+            <span style="font-weight: 700;">Phone</span> : +91 XXXXXXXXXX <br>
+            <span style="font-weight: 700;">E-Mail</span> : ishan11032005@gmail.com
+          </div>
+          </div>
+          <div id="COPYRIGHT">
+            &copy; 2023-24, <a href="index.html" id="footerLink">FashionStore.com</a>
+          </div>
+        </footer>
+        </div></center>
+</body>
+<script src="PANTS.js"></script>
+</html>

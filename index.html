@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<link rel="stylesheet" href="style.css">
+<style>
+  .btn{
+    border: 2px solid #ffffff;margin-top: 5vh;padding: 10px;width: 10vw;height: 5vh;font-weight: 700;border-radius: 10px;cursor: pointer;
+    transition-duration: 2s;
+  }
+  .btn:hover{
+    background-color: hwb(0 100% 0%);
+    color: #ca8e40;
+  }
+  @media screen and (max-width:1095px){
+    #NAVITEMS{
+    display: inline-block;
+    margin-left: 2.5vw;
+}
+  }
+  @media screen and (max-width:950px){
+    .navList{
+      font-size: 1rem;
+}
+#LOGO{
+  font-size: 1.8rem;
+}
+  }
+  @media screen and (max-width:730px){
+    #NAVITEMS{
+    display: inline-block;
+    margin-left: 0vw;
+}
+.navList{
+      font-size: 1rem;
+}
+#LOGO{
+  font-size: 1rem;
+}
+  }
+  @media screen and (max-width:595px){
+.navList{
+      font-size: 1rem;
+      padding-right: 1vw;
+}
+header{
+  padding-right: 1vw;
+  padding-top: 3vh;
+  padding-bottom: 3vh;
+}
+  }
+  @media screen and (max-width:495px){
+.navList{
+      font-size: 0.5rem;
+      padding-right: 1vw;
+}
+#LOGO{
+  font-size: 0.6rem;
+}
+header{
+  padding-right: 1vw;
+  padding-top: 3vh;
+  padding-bottom: 3vh;
+}
+  }
+  @media screen and (max-width:450px){
+    #COPYRIGHT{
+      font-size: 1.5rem;
+    }
+  #backToTop{
+      font-size: 1.5rem;
+    }
+  }
+  @media screen and (max-width:944px) {
+    #intro{
+      font-size: 1.5rem;
+    }
+  }
+  @media screen and (max-width:792px) {
+    #intro{
+      font-size: 1rem;
+    }
+    #BUTTONFORPURCHASE{
+      font-size: 2rem;
+    }
+    #BUTTONFORPURCHASE1{
+      font-size: 2rem;
+    }
+  }
+  @media screen and (max-width:600px) {
+    #intro{
+      font-size: 0.8rem;
+    }
+  }
+  @media screen and (max-width:485px) {
+    .text{
+      font-size: 1rem;
+    }
+  }
+  @media screen and (max-width:750px) {
+    .btn{
+      font-size: 1rem;
+    }
+  }
+  @media screen and (max-width:453px) {
+    .btn{
+      font-size: 0.75rem;
+    }
+  }
+  .navLink{
+    color: black;text-decoration: none;
+  }
+  .navLink:hover{
+    color: black;
+  }
+  @media screen and (max-width:476px) {
+    #SIGNEDIN{
+      font-size: 2.5rem;
+}
+  }
+  @media screen and (max-width:350px) {
+    #SIGNEDIN{
+      font-size: 1.5rem;
+}
+  }
+</style>
+<body>
+    <header id="header">
+      <nav>
+        <a href="index.html" style="text-decoration: none;"><span id="LOGO"><span id="LOGO1">FASHION</span><span id="LOGO2">STORE</span></span></a>
+        <ul id="NAVITEMS">
+          <li class="navList" id="HOMEPAGE"><a href="index.html" class="navLink">HOME</a></li>
+          <li class="navList" id="PRODUCTS" style="display: none;"><a href="PRODUCTS.html" class="navLink">PRODUCTS</a></li>
+          <li class="navList" id="ABOUT"><a href="ABOUT.html" class="navLink">ABOUT</a></li>
+          <li class="navList" id="SI" onclick="signIn()" style="cursor: pointer;">SIGN-IN</li>
+          <li class="navList" id="SU"><a href="SIGNUP.html" class="navLink">SIGN-UP</a></li>
+        </ul>
+      </nav>
+    </header><br><br><br>
+    <div id="opening-content">
+    <center><div id="intro">
+      <span>Welcome to</span> <br>
+      <span style="color: hwb(269 0% 0%);font-size: 3em;font-family: system-ui;font-family: 800;">FASHION</span><span style="font-size: 3em;color: hsl(224, 43%, 35%);font-family: system-ui;font-family: 800;">STORE</span><br>
+      <center><span class="container">
+        <center><p class="text">Fashion as Unique as You</p></center>
+    </div></center><br><br><br>
+    <CENTER><a href="SALES.html"><div id="BUTTONFORPURCHASE">
+      DEALS
+    </div></a></CENTER>
+    </div></center>
+    <div id="SIGNIN">
+      <div id="exitSignIn"><i class="fa-solid fa-xmark" onclick="exitSignIn()"></i></div><br><br>
+      <b style="font-size: 2.5rem;">SIGN-IN</b>
+      <FORM>
+        <label>
+          E-MAIL ID : 
+        </label>
+        <input type="email" placeholder="email" id="email" style="margin-bottom: 7.5vh;margin-left: 2vw;"><br><br>
+        <label>
+          USERNAME : 
+        </label>
+        <input type="text" placeholder="username" id="username" style="margin-bottom: 7.5vh;margin-left: 2vw;"><br><br>
+        <label>
+          PASSWORD : 
+        </label>
+        <input type="password" placeholder="password" id="password" style="margin-bottom: 5vh;margin-left: 2vw;"><br>
+        <p style="font-weight: 700;">Forgot Password?</p>
+        <div class="btn" style="border: 2px solid #ffffff;margin-top: 5vh;margin-left: 45vw;padding: 10px;width: 10vw;height: 5vh;font-weight: 700;border-radius: 10px;cursor: pointer;" onclick="collectInfo()">LOGIN</div>
+      </FORM>
+    </div>
+    <CENTER><a href="PRODUCTS.html"><div id="BUTTONFORPURCHASE1">
+      PRODUCTS
+    </div></a></CENTER>
+    <center><div id="footer">
+    <footer>
+      <div id="backToTop">
+        <a href="#header" style="color: #ffffff;text-decoration: none;">Back To Top</a>
+      </div>
+      <div id="connectWithUs" style="background-color: #DAD3BE;">
+      <div style="display: inline;font-size: 2rem;font-weight: 700;"> Contact Us </div><br><br><br>
+      <span style="margin-right: 10vh;font-size: 2rem;"><a href="https://www.instagram.com/ishan_tiwari123005/?igsh=OHA5bTlwbnZrcjhr"><i id="Connect" class="fa-brands fa-instagram"></i></a></span><span style="margin-left: 10vh;font-size: 2rem;"><a href="https://www.linkedin.com/in/ishan-tiwari-45393029a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i id="Connect" class="fa-brands fa-linkedin-in"></i></a></span><br><br>
+      <div style="display: inline;text-align: center;font-size: 1.5rem;;justify-content: center;align-items: center;">
+        <span style="font-weight: 700;">Phone</span> : +91 XXXXXXXXXX <br>
+        <span style="font-weight: 700;">E-Mail</span> : ishan11032005@gmail.com
+      </div>
+      </div>
+      <div id="COPYRIGHT">
+        &copy; 2023-24, <a href="index.html" id="footerLink">FashionStore.com</a>
+      </div>
+    </footer>
+    </div></center>
+</body>
+<script src="script.js"></script>
+</html>
